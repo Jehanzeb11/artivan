@@ -2,32 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #f2f2f2;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.btn {
+  background: linear-gradient(275.14deg, #059CC5 -31.5%, #C971FF 117.14%);
+  padding: 10px 12px !important;
+  color: white;
+  border-radius: 12px;
+  height: fit-content;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn:hover {
+  background: linear-gradient(275.14deg, #C971FF -31.5%, #059CC5 117.14%);
+}
+
+.btnNonActive {
+  padding: 10px 12px !important;
+  color: black;
+  border-radius: 12px;
+  height: fit-content;
+  border: 1px solid lightgray;
+}
+
+
+.swipeToLeft {
+  animation: animatSwipeLeft 0.5s ease-in;
+}
+
+@keyframes animatSwipeLeft {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0%;
   }
 }
+
+.swipeToRight {
+  animation: animatSwipeRight 0.5s ease-in;
+}
+
+@keyframes animatSwipeRight {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+.bgHero{
+  background-image: url("../assets/bgHero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+
+.techSlideData{
+  display: flex !important;
+  justify-content: center;
+}
+
