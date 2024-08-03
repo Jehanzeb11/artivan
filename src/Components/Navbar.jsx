@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div>
       <header className="bg-transparent w-full fixed z-30 top-0 p-4 flex justify-center items-center">
-        <nav className="container flex justify-between gap-3 text-base">
+        <nav className="container flex justify-between gap-3 text-base lg:w-[90%]">
           <Image
             src={logo}
             alt="logo"

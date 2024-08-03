@@ -1,7 +1,11 @@
+import BusinessCounter from "@/Components/BusinessCounter";
+import BusinessRock from "@/Components/BusinessRock";
 import Collection from "@/Components/Collection";
+import DesignQuality from "@/Components/DesignQuality";
 import HomeHeroSection from "@/Components/HomeHeroSection";
 import HomeServiceSlider from "@/Components/HomeServiceSlider";
 import MagicHappens from "@/Components/MagicHappens";
+import Pricing from "@/Components/Pricing";
 import TechSlider from "@/Components/TechSlider";
 
 export default function Home() {
@@ -12,6 +16,10 @@ export default function Home() {
 <MagicHappens/>
 <TechSlider/>
 <Collection/>
+<BusinessRock/>
+<Pricing/>
+<BusinessCounter/>
+<DesignQuality/>
 </main>
   );
 }
