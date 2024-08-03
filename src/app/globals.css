@@ -83,3 +83,61 @@ color: #059CC5 !important;
     font-size: 10px !important;
    }
 }
+
+.slide-btn{
+  width: 50px !important;
+  z-index: 10 !important;
+}
+
+.slick-next{
+  right: -60px !important;
+}
+
+.slick-prev {
+  left: -60px !important;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .slide-btn{
+    width: 40px !important;
+  }
+
+  .slick-next{
+    right: -0 !important;
+  }
+  
+  .slick-prev {
+    left: -0 !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .slide-btn{
+    width: 35px !important;
+  }
+
+  .slick-next{
+    right: 5px!important;
+  }
+  
+  .slick-prev {
+    left: 5px !important;
+  }
+
+}
+
+
+.flex {
+  display: flex !important;
+}
+
+.slick-prev:before {
+  content: '' !important;
+}
+
+.slick-next:before {
+  content: '' !important;
+}

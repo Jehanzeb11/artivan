@@ -5,9 +5,9 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const HomeHeroSection = () => {
   return (
-    <div className="w-full bgHero h-screen">
+    <div className="w-full bgHero sm:h-screen max-h-screen">
       <div className="bg-white/80 h-full flex justify-center items-end w-full px-4 max-lg:pb-6">
-        <div className="lg:w-[90%] w-full flex lg:gap-4 gap-0 max-md:flex-col-reverse justify-between items-center mt-12">
+        <div className="lg:w-[90%] w-full flex lg:gap-4 gap-0 max-md:flex-col-reverse sm:justify-between items-center mt-12">
           <div>
             <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl sm:leading-10 font-bold">
               Creating <span className="text-primary">Superior</span>
@@ -34,7 +34,7 @@ const HomeHeroSection = () => {
               alt="hero"
               width={1000}
               height={1000}
-              className="lg:w-[96] lg:h-[35rem] max-sm:h-72 h-full w-full object-contain"
+              className="lg:w-[96] lg:h-[35rem] max-sm:h-80 h-full w-full object-contain"
             />
           </div>
         </div>

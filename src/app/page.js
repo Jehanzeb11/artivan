@@ -7,6 +7,7 @@ import HomeServiceSlider from "@/Components/HomeServiceSlider";
 import MagicHappens from "@/Components/MagicHappens";
 import Pricing from "@/Components/Pricing";
 import TechSlider from "@/Components/TechSlider";
+import Testimonials from "@/Components/Testimonials";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
 <Pricing/>
 <BusinessCounter/>
 <DesignQuality/>
+<Testimonials/>
 </main>
   );
 }

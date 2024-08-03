@@ -2,7 +2,7 @@ import React from "react";
 
 const BusinessCounter = () => {
   return (
-    <div className="w-full bg-my-gradient sm:py-12 py-4 sm:px-4  flex justify-center items-center mb-10">
+    <div className="w-full bg-my-gradient sm:py-12 py-4 sm:px-4  flex justify-center items-center">
       <div className="container lg:w-[90%] w-full flex justify-between items-center">
         <div className="text-white w-full border-r-2 border-white px-0.5">
           <h1 className="lg:text-5xl sm:text-4xl text-2xl font-bold text-center w-full">

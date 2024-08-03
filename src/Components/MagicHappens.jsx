@@ -8,7 +8,7 @@ const MagicHappens = () => {
   return (
     <div className="flex justify-center items-center my-12">
       <div className="container xl:w-[90%] px-4">
-        <h1 className="text-center text-6xl font-bold">
+        <h1 className="text-center lg:text-6xl sm:tex-4xl text-3xl font-bold">
           At <span className="text-primary">Artevian</span> We Make Magic
           Happen!
         </h1>
