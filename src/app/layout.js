@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "@/Components/Footer";
 
 const inter = Poppins({ subsets: ["latin"], weight: ["400" ,"500","700","900"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   );

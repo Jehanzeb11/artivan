@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheck } from "react-icons/fa";
+import { FaCheckCircle  } from "react-icons/fa";
 
 const VideoPrices = () => {
   const cards = [
@@ -70,7 +70,7 @@ const VideoPrices = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-12 mt-6 gap-6 justify-items-center">
+    <div className="w-full grid grid-cols-12 mt-6 lg:gap-10 gap-4 justify-items-center">
       {cards.map((card) => (
         <div
           key={card.id}
@@ -82,22 +82,22 @@ const VideoPrices = () => {
 
           <h4 className="text-center font-bold text-3xl my-3">${card.price}</h4>
 
-          <ul className="flex flex-col gap-4 p-3 overflow-y-scroll h-60 w-full">
+          <ul className="flex flex-col priceList gap-3 py-3 px-8 overflow-y-scroll sm:h-80 h-60 w-full">
             {card.list.map((list) => (
               <li
                 key={list}
-                className="flex items-center gap-2 text-gray-700 w-full text-sm"
+                className="flex items-center gap-2 text-gray-700 w-full sm:text-lg text-base"
               >
                 <span>
                   {" "}
-                  <FaCheck size={20} className="text-green-600" />
+                  <FaCheckCircle  size={20} className="text-[#8EC63F]" />
                 </span>
                 {list}
               </li>
             ))}
           </ul>
           <div className="flex justify-center my-3">
-            <button className="btn">Order Now</button>
+            <button className="btn text-lg">Order Now</button>
           </div>
         </div>
       ))}

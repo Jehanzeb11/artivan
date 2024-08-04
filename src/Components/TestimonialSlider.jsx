@@ -39,7 +39,7 @@ const TestimonialSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    arrows:true,
+    arrows: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -60,7 +60,7 @@ const TestimonialSlider = () => {
           slidesToScroll: 1,
         },
       },
-      
+
     ],
   };
 
@@ -70,13 +70,13 @@ const TestimonialSlider = () => {
         {[...Array(4)].map((_, i) => (
           <div key={i} className="p-4 flex justify-center items-center w-full">
             <div className="rounded-xl border-[1px] border-gray-300 md:p-10 p-6 shadow-lg md:max-w-xl max-w-[20rem]">
-                <div className="p-3 relative">
-                    <Image src={quoteT} width={1000} height={1000} alt="STAR" className="w-4 object-contain absolute top-0 left-0" />
-              <p className="text-gray-700 text-center md:leading-10 leading-7 max-sm:text-xs">
-                Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their work to someone else.
-              </p>
-              <Image src={quoteB} width={1000} height={1000} alt="STAR" className="w-4 object-contain absolute bottom-0 right-0" />
-                </div>
+              <div className="p-3 relative">
+                <Image src={quoteT} width={1000} height={1000} alt="STAR" className="w-4 object-contain absolute top-0 left-0" />
+                <p className="text-gray-700 text-center md:leading-10 leading-7 max-sm:text-xs">
+                  Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their work to someone else.
+                </p>
+                <Image src={quoteB} width={1000} height={1000} alt="STAR" className="w-4 object-contain absolute bottom-0 right-0" />
+              </div>
               <div className="flex justify-center items-center w-full flex-col">
                 <Image src={testimonial1} width={1000} height={1000} className="w-24 mt-6 mb-4 rounded-full object-contain" alt="" />
                 <div className="flex gap-1 justify-center items-center mb-4">

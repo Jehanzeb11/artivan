@@ -53,35 +53,35 @@ const CollectionData = () => {
          <Slider {...settings}>
 
 <div className='px-2'>
-<Image src={demandThrive} alt="Python" className='object-contain '/>
+<Image src={demandThrive} alt="Python" className='object-contain mx-auto w-full'/>
 </div>
 
 <div className='px-2'>
-<Image src={river} alt="Python" className='h-full mt-1  object-contain'/>
+<Image src={river} alt="Python" className='mx-auto w-full object-contain'/>
 </div>
 
 <div className='px-2'>
-<Image src={gorilla} alt="Python" className='h-full  object-contain'/>
+<Image src={gorilla} alt="Python" className='mx-auto w-full object-contain'/>
 </div>
 
 <div className='px-2'>
-<Image src={media} alt="Python" className='object-contain '/>
+<Image src={media} alt="Python" className='object-contain mx-auto w-full'/>
 </div>
 
 <div className='px-2'>
-<Image src={mcb} alt="Python" className='object-contain '/>
+<Image src={mcb} alt="Python" className='object-contain mx-auto w-full'/>
 </div>
 
 <div className='px-2'>
-<Image src={supreme} alt="Python" className='h-full object-contain'/>
+<Image src={supreme} alt="Python" className='mx-auto w-full object-contain'/>
 </div>
 
 <div className='px-2'>
-<Image src={barber} alt="Python" className='h-full object-contain'/>
+<Image src={barber} alt="Python" className='mx-auto w-full object-contain'/>
 </div>
 
 <div className='px-2'>
-<Image src={papachJone} alt="Python" className='object-contain '/>
+<Image src={papachJone} alt="Python" className='object-contain mx-auto w-full'/>
 </div>
 
          </Slider>

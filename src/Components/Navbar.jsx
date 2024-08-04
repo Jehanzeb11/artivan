@@ -1,13 +1,26 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import logo from "../assets/logo.webp";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0); // Update state based on scroll position
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function to remove event listener on unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleClose = () => {
     setTimeout(() => {
       setShow(false);
@@ -16,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="bg-transparent w-full fixed z-30 top-0 p-4 flex justify-center items-center">
+      <header className={`${isScrolled ? "bg-[#3030304c]" : "bg-transparent"} transition-colors duration-300 ease-in-out w-full fixed z-30 top-0 py-3 px-4 flex justify-center items-center`}>
         <nav className="container flex justify-between gap-3 text-base lg:w-[90%]">
           <Image
             src={logo}
@@ -26,7 +39,7 @@ const Navbar = () => {
             className="cursor-pointer lg:w-52 md:w-48 w-40 object-contain"
           />
 
-          <ul className="lg:flex lg:gap-8 gap-4 font-medium justify-center items-center text-gray-700 hidden">
+          <ul className="lg:flex lg:gap-8 gap-4 font-medium justify-center items-center text-gray-800 hidden xl:text-xl text-lg">
             <li className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
               Home
             </li>
@@ -46,7 +59,7 @@ const Navbar = () => {
 
           <button className="btn lg:block hidden">Hire Us Now</button>
 
-          <button className="lg:hidden flex" onClick={() => setShow(true)}>
+          <button className="lg:hidden block" onClick={() => setShow(true)}>
             <RiMenu3Fill color="#059CC5" size={28} />
           </button>
         </nav>

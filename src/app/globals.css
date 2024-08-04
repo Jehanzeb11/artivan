@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   background: #ffff;
 }
@@ -56,40 +57,40 @@ body {
   }
 }
 
-.bgHero{
+.bgHero {
   background-image: url("../assets/bgHero.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
 
-.techSlideData{
+.techSlideData {
   display: flex !important;
   justify-content: center;
 }
 
 
-li.slick-active button:before{
-color: #059CC5 !important;
+li.slick-active button:before {
+  color: #059CC5 !important;
 }
 
-.slick-dots li button:before  {
+.slick-dots li button:before {
   font-size: 14px !important;
   color: #059CC5 !important;
 }
 
 @media only screen and (max-width: 768px) {
-  .slick-dots li button:before  {
+  .slick-dots li button:before {
     font-size: 10px !important;
-   }
+  }
 }
 
-.slide-btn{
+.slide-btn {
   width: 50px !important;
   z-index: 10 !important;
 }
 
-.slick-next{
+.slick-next {
   right: -60px !important;
 }
 
@@ -99,14 +100,14 @@ color: #059CC5 !important;
 
 
 @media only screen and (max-width: 900px) {
-  .slide-btn{
+  .slide-btn {
     width: 40px !important;
   }
 
-  .slick-next{
+  .slick-next {
     right: -0 !important;
   }
-  
+
   .slick-prev {
     left: -0 !important;
   }
@@ -115,14 +116,14 @@ color: #059CC5 !important;
 
 
 @media only screen and (max-width: 600px) {
-  .slide-btn{
+  .slide-btn {
     width: 35px !important;
   }
 
-  .slick-next{
-    right: 5px!important;
+  .slick-next {
+    right: 5px !important;
   }
-  
+
   .slick-prev {
     left: 5px !important;
   }
@@ -140,4 +141,8 @@ color: #059CC5 !important;
 
 .slick-next:before {
   content: '' !important;
+}
+
+.priceList::-webkit-scrollbar {
+  display: none;
 }

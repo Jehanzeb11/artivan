@@ -35,7 +35,7 @@ const Collection = () => {
   return (
     <div className="flex justify-center items-center py-16 px-4 w-full">
       <div className="container xl:w-[90%] w-full">
-        <h1 className="lg:text-6xl sm:text-4xl text-3xl font-bold text-center">
+        <h1 className="lg:text-6xl text-gray-900 sm:text-4xl text-3xl font-bold text-center">
           A <span className="text-primary">Collection</span> That Will Win Your
           Heart Over
         </h1>
