@@ -146,3 +146,13 @@ li.slick-active button:before {
 .priceList::-webkit-scrollbar {
   display: none;
 }
+
+.aboutInfo{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+ .aboutInfo{
+  display: flex;
+  }
+}
