@@ -16,7 +16,7 @@ const Hero = () => {
 <div className="lg:col-span-6 col-span-12 aboutInfo flex-col justify-between gap-4">
 
 <h4 className='lg:text-3xl text-xl font-bold text-primary'>About Us</h4>
-<h1 className='xl:text-5xl text-3xl font-bold my-0 xl:leading-[60px] leading-8'>Masters Of <span className='text-primary'>Digital</span> And Design</h1>
+<h1 className='xl:text-5xl sm:text-4xl text-3xl font-bold my-0 xl:leading-[60px] leading-8'>Masters Of <span className='text-primary'>Digital</span> And Design</h1>
 <p className='font-semibold max-xl:text-sm'>Infusing Creativity into Your Digital Presences.</p>
 <p className='xl:mt-4 mt-2 text-gray-500 max-xl:text-sm'>Artevian works as your digital agent with a core ofvaluing client satisfaction. Our expertise lies in various market niches, involving digital marketing, content creation, logo design, branding, and web development.</p>
 

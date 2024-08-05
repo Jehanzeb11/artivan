@@ -6,9 +6,9 @@ const DesignQuality = () => {
   return (
     <div className='w-full flex justify-center items-center px-4 lg:py-16 py-8 bg-[#F7F7FA]'>
       <div className="container lg:w-[90%] w-full">
-        <h1 className='text-center text-gray-900 font-bold lg:text-6xl sm:text-4xl xl:px-64 lg:px-36 px-0'>Digitally Focused <span className='text-primary'>Quality Design</span> Services</h1>
-        <p className="my-6 text-center text-gray-700">Artevian is committed to creating a digital presence that has a lasting impact. At Artevian, we strive to ensure that your brand resonates strongly across all online platforms.</p>
-        <p className="text-center text-gray-700">Here at Artevian, we can make your brand stand out on any and all digital platforms.</p>
+        <h1 className='text-center text-gray-900 font-bold lg:text-6xl sm:text-4xl text-3xl xl:px-64 lg:px-36 px-0'>Digitally Focused <span className='text-primary'>Quality Design</span> Services</h1>
+        <p className="sm:my-6 my-2 text-center text-gray-700 max-sm:text-sm">Artevian is committed to creating a digital presence that has a lasting impact. At Artevian, we strive to ensure that your brand resonates strongly across all online platforms.</p>
+        <p className="text-center text-gray-700 max-sm:text-sm">Here at Artevian, we can make your brand stand out on any and all digital platforms.</p>
 
         <div className="grid grid-cols-12 lg:gap-6 gap-3 lg:my-8 my-3">
 
