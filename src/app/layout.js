@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
