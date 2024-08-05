@@ -8,7 +8,7 @@ import MagicHappens from "@/Components/MagicHappens";
 import Pricing from "@/Components/Pricing";
 import TechSlider from "@/Components/TechSlider";
 import Testimonials from "@/Components/Testimonials";
-import "./globals.css";
+
 export default function Home() {
   return (
 <main>
