@@ -65,33 +65,36 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div>
+    <div className="flex justify-center items-center">
+    <div className='lg:w-[80%] w-full'>
       <Slider {...settings}>
         {[...Array(4)].map((_, i) => (
-          <div key={i} className="p-4 flex justify-center items-center w-full">
-            <div className="rounded-xl border-[1px] border-gray-300 md:p-10 p-6 shadow-lg md:max-w-xl max-w-[20rem]">
+          <div key={i} className="p-4 flex justify-center items-center md:max-w-[25rem] sm:max-w-[20rem] max-w-[18rem]">
+            <div className="rounded-xl border-[1px] border-gray-300 md:p-6 p-4 shadow-lg w-full">
               <div className="p-3 relative">
-                <Image src={quoteT} width={1000} height={1000} alt="STAR" className="w-4 object-contain absolute top-0 left-0" />
-                <p className="text-gray-700 text-center md:leading-10 leading-7 max-sm:text-xs">
+                <Image src={quoteT} width={1000} height={1000} alt="STAR" className="sm:w-4 w-3 object-contain absolute top-0 left-0" />
+                <p className="text-gray-700 text-center  max-sm:text-xs">
                   Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their work to someone else.
                 </p>
-                <Image src={quoteB} width={1000} height={1000} alt="STAR" className="w-4 object-contain absolute bottom-0 right-0" />
+                <Image src={quoteB} width={1000} height={1000} alt="STAR" className="sm:w-4 w-3 object-contain absolute bottom-0 right-0" />
               </div>
               <div className="flex justify-center items-center w-full flex-col">
-                <Image src={testimonial1} width={1000} height={1000} className="w-24 mt-6 mb-4 rounded-full object-contain" alt="" />
+                <Image src={testimonial1} width={1000} height={1000} className="sm:w-24 w-16 mt-6 mb-4 rounded-full object-contain" alt="" />
                 <div className="flex gap-1 justify-center items-center mb-4">
                   {Array(5).fill(0).map((_, j) => (
-                    <Image key={j} src={star} width={1000} height={1000} alt="STAR" className="w-5" />
+                    <Image key={j} src={star} width={1000} height={1000} alt="STAR" className="md:w-5 w-4" />
                   ))}
                 </div>
-                <h4 className="font-bold text-xl text-[#57007B]">Imran Khan</h4>
-                <p className="font-medium text-base text-gray-700">Software Engineer</p>
+                <h4 className="font-bold sm:text-xl text-base text-[#57007B]">Imran Khan</h4>
+                <p className="font-medium sm:text-base text-sm text-gray-700">Software Engineer</p>
               </div>
             </div>
           </div>
         ))}
       </Slider>
     </div>
+    </div>
+
   );
 };
 

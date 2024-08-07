@@ -156,3 +156,9 @@ li.slick-active button:before {
   display: flex;
   }
 }
+
+
+.slick-slide{
+  display: flex !important;
+  justify-content: center !important;
+}
