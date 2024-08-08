@@ -66,7 +66,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="flex justify-center items-center">
-    <div className='lg:w-[80%] w-full'>
+    <div className='testimonials lg:w-[80%] w-full'>
       <Slider {...settings}>
         {[...Array(4)].map((_, i) => (
           <div key={i} className="p-4 flex justify-center items-center md:max-w-[25rem] sm:max-w-[20rem] max-w-[18rem]">

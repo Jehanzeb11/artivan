@@ -158,7 +158,7 @@ li.slick-active button:before {
 }
 
 
-.slick-slide{
+.testimonials > .slick-slider > .slick-list > .slick-track >.slick-slide > div{
   display: flex !important;
   justify-content: center !important;
 }

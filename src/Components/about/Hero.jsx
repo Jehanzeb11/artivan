@@ -6,7 +6,7 @@ import about3 from "@/assets/about-3.png"
 import about4 from "@/assets/about-4.png"
 const Hero = () => {
   return (
-    <div className='w-full flex justify-center items-center py-16 mt-4 px-4'>
+    <div className='w-full flex justify-center items-center py-16 mt-8 px-4'>
 
     <div className="container lg:w-[90%]">
 
@@ -34,7 +34,7 @@ const Hero = () => {
 <h4 className='lg:text-3xl text-xl font-bold text-primary'>About Us</h4>
 <h1 className='xl:text-5xl text-3xl font-bold my-0 xl:leading-[60px] leading-8'>Masters Of <span className='text-primary'>Digital</span> And Design</h1>
 <p className='font-semibold max-xl:text-sm'>Infusing Creativity into Your Digital Presences.</p>
-<p className='xl:mt-4 mt-2 text-gray-500 max-xl:text-sm'>Artevian works as your digital agent with a core ofvaluing client satisfaction. Our expertise lies in various market niches, involving digital marketing, content creation, logo design, branding, and web development.</p>
+<p className='xl:mt-4 mt-2 text-gray-500 max-xl:text-sm xl:leading-10 lg:leading-8'>Artevian works as your digital agent with a core ofvaluing client satisfaction. Our expertise lies in various market niches, involving digital marketing, content creation, logo design, branding, and web development.</p>
 
 <button className='btn w-fit'>Contact Us</button>
 

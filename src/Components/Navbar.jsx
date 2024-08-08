@@ -1,14 +1,20 @@
 "use client";
 import Image from "next/image";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.webp";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showMenuMobile, setShowMenuMobile] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +27,8 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleClose = () => {
+  const handleClose = (route) => {
+    router.push(`/${route}`);
     setTimeout(() => {
       setShow(false);
     }, 300);
@@ -40,18 +47,41 @@ const Navbar = () => {
           />
 
           <ul className="lg:flex lg:gap-8 gap-4 font-medium justify-center items-center text-gray-800 hidden xl:text-xl text-lg">
-            <li className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+            <Link href="/" className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
               Home
-            </li>
-            <li className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+            </Link>
+            <Link href="/about" className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
               About
-            </li>
-            <li className="flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+            </Link>
+            <li onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)} className={`flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer relative`}>
               Services <IoIosArrowDown />
+
+              {showMenu && (
+                <div className="absolute top-7 z-[999999] flex items-center justify-center">
+                  <ul className="bg-white w-52 rounded-lg shadow-lg p-6 flex flex-col gap-3">
+                    <Link href="/logo-design" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                      Logo Design
+                    </Link>
+                    <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                      Branding
+                    </li>
+                    <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                      B2B Portal
+                    </li>
+                    <Link href="/website" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                      Website Design
+                    </Link>
+                    <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                      Video Animation
+                    </li>
+                  </ul>
+                </div>
+              )}
+
             </li>
-            <li className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+            <Link href="/our-packages" className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
               Our Packages
-            </li>
+            </Link>
             <li className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
               Contact
             </li>
@@ -69,17 +99,16 @@ const Navbar = () => {
         <div className="fixed z-50">
           <div
             className="fixed z-40 bg-gray-950 top-0 left-0 w-full h-screen opacity-35"
-            onClick={handleClose}
+            onClick={() => setShow(false)}
           ></div>
           <div
-            className={`fixed z-50 right-0 top-0 ${
-              show ? "swipeToLeft" : "swipeToRight"
-            } w-3/4 h-screen bg-gray-900 p-3`}
+            className={`fixed z-50 right-0 top-0 ${show ? "swipeToLeft" : "swipeToRight"
+              } w-3/4 h-screen bg-gray-900 p-3`}
           >
             <div className="flex justify-end">
               <button
                 className="lg:hidden block text-primary"
-                onClick={handleClose}
+                onClick={() => setShow(false)}
               >
                 <IoCloseSharp
                   size={30}
@@ -90,25 +119,65 @@ const Navbar = () => {
             <div className="overflow-y-scroll h-full">
               <ul className="text-white text-center mt-12 gap-8 text-2xl flex justify-center flex-col items-center font-semibold">
                 <li
-                  onClick={handleClose}
+                  onClick={() => handleClose("")}
                   className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
                 >
                   Home
                 </li>
                 <li
-                  onClick={handleClose}
+                  onClick={() => handleClose("about")}
                   className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
                 >
                   About
                 </li>
                 <li
-                  onClick={handleClose}
+                  onClick={() => setShowMenuMobile(!showMenuMobile)}
                   className="hover:text-primary flex gap-2 items-end transition-all ease-in-out cursor-pointer duration-500"
                 >
                   Services <IoIosArrowDown />
                 </li>
+
+
+                {showMenuMobile &&
+
+                  <ul className="flex flex-col gap-4 text-xl font-semibold bg-white mx-2 rounded-lg text-gray-800 p-2.5">
+
+                    <li
+                      onClick={() => handleClose("logo-design")}
+                      className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
+                    >
+                      Logo Design
+                    </li>
+                    <li
+                      onClick={handleClose}
+                      className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
+                    >
+                      Branding
+                    </li>
+                    <li
+                      onClick={handleClose}
+                      className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
+                    >
+                      B2B Portal
+                    </li>
+                    <li
+                      onClick={() => handleClose("website")}
+                      className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
+                    >
+                      Website Design
+                    </li>
+                    <li
+                      onClick={handleClose}
+                      className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
+                    >
+                      Video Animation
+                    </li>
+                  </ul>
+
+                }
+
                 <li
-                  onClick={handleClose}
+                  onClick={()=>handleClose("our-packages")}
                   className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
                 >
                   Our Packages
