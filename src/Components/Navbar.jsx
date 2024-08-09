@@ -44,6 +44,7 @@ const Navbar = () => {
             width={1000}
             height={1000}
             className="cursor-pointer lg:w-52 md:w-48 w-40 object-contain"
+            onClick={() => router.push("/")}
           />
 
           <ul className="lg:flex lg:gap-8 gap-4 font-medium justify-center items-center text-gray-800 hidden xl:text-xl text-lg">
@@ -62,18 +63,18 @@ const Navbar = () => {
                     <Link href="/logo-design" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       Logo Design
                     </Link>
-                    <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                    {/* <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       Branding
                     </li>
                     <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       B2B Portal
-                    </li>
+                    </li> */}
                     <Link href="/website" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       Website Design
                     </Link>
-                    <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                    <Link href="/video-animation" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       Video Animation
-                    </li>
+                    </Link>
                   </ul>
                 </div>
               )}
@@ -82,9 +83,9 @@ const Navbar = () => {
             <Link href="/our-packages" className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
               Our Packages
             </Link>
-            <li className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+            <Link href="/contact" className="hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
               Contact
-            </li>
+            </Link>
           </ul>
 
           <button className="btn lg:block hidden">Hire Us Now</button>
@@ -148,7 +149,7 @@ const Navbar = () => {
                     >
                       Logo Design
                     </li>
-                    <li
+                    {/* <li
                       onClick={handleClose}
                       className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
                     >
@@ -159,7 +160,7 @@ const Navbar = () => {
                       className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
                     >
                       B2B Portal
-                    </li>
+                    </li> */}
                     <li
                       onClick={() => handleClose("website")}
                       className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
@@ -167,7 +168,7 @@ const Navbar = () => {
                       Website Design
                     </li>
                     <li
-                      onClick={handleClose}
+                      onClick={() => handleClose("video-animation")}
                       className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
                     >
                       Video Animation
@@ -183,7 +184,7 @@ const Navbar = () => {
                   Our Packages
                 </li>
                 <li
-                  onClick={handleClose}
+                  onClick={() => handleClose("contact")}
                   className="hover:text-primary transition-all ease-in-out cursor-pointer duration-500"
                 >
                   Contact
