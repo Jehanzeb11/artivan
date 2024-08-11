@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import quality from "../assets/quality-service.png"
 import team from "../assets/team-collab.png"
+import quick from "../assets/quick-time.png"
+import service from "../assets/full-service.png"
 const DesignQuality = () => {
   return (
     <div className='w-full flex justify-center items-center px-4 lg:py-16 py-8 bg-[#F7F7FA]'>
@@ -40,7 +42,9 @@ const DesignQuality = () => {
             </div>
             <p className="text-xl mt-2.5 font-bold"><span className="text-primary mr-2">#2</span> Team Collaboration</p>
 
-            <p className="text-gray-500 mt-4">Whatever may come our way, we will never give up on our relentless quest of excellence. We are thrilled to meet your expectations with exceptional quality that sets us apart from others, being pioneers in the digital realm.s</p>
+            <p className="text-gray-500 mt-4">At Artevian, we believe in the power of teamwork and digital branding. As a group, Artevian's members bring a wealth of knowledge to the table, and the sum of their individual contributions yields remarkable outcomes.
+
+</p>
 
           </div>
 
@@ -58,32 +62,36 @@ const DesignQuality = () => {
           <div data-aos="fade-down" data-aos-delay="150" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
-                src={quality}
+                src={service}
                 alt="hero"
                 width={1000}
                 height={1000}
                 className="w-10"
               />
             </div>
-            <p className="text-xl mt-2.5 font-bold"><span className="text-primary mr-2">#1</span> Quality Services</p>
+            <p className="text-xl mt-2.5 font-bold"><span className="text-primary mr-2">#3</span> ROI Focused</p>
 
-            <p className="text-gray-500 mt-4">Whatever may come our way, we will never give up on our relentless quest of excellence. We are thrilled to meet your expectations with exceptional quality that sets us apart from others, being pioneers in the digital realm.s</p>
+            <p className="text-gray-500 mt-4">Our digital techniques have been thoughtfully developed to be both effective and cost-effective, ensuring that every campaign contributes to increased earnings.
+
+</p>
 
           </div>
 
           <div data-aos="fade-up" data-aos-delay="150" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
-                src={team}
+                src={quick}
                 alt="hero"
                 width={1000}
                 height={1000}
                 className="w-10"
               />
             </div>
-            <p className="text-xl mt-2.5 font-bold"><span className="text-primary mr-2">#2</span> Quality Services</p>
+            <p className="text-xl mt-2.5 font-bold"><span className="text-primary mr-2">#4</span> Quick Delivery</p>
 
-            <p className="text-gray-500 mt-4">Whatever may come our way, we will never give up on our relentless quest of excellence. We are thrilled to meet your expectations with exceptional quality that sets us apart from others, being pioneers in the digital realm.s</p>
+            <p className="text-gray-500 mt-4">We proudly promote efficiency and precision as our service slogan. Our skilled team will efficiently accomplish your projects, ensuring quality and your pleasure throughout the process.
+
+</p>
 
           </div>
 
