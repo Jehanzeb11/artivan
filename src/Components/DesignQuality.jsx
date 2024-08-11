@@ -12,7 +12,7 @@ const DesignQuality = () => {
 
         <div className="grid grid-cols-12 lg:gap-6 gap-3 lg:my-8 my-3">
 
-          <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+          <div data-aos="fade-up" data-aos-delay="150" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
                 src={quality}
@@ -28,7 +28,7 @@ const DesignQuality = () => {
 
           </div>
 
-          <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+          <div data-aos="fade-down" data-aos-delay="150" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
                 src={team}
@@ -49,13 +49,13 @@ const DesignQuality = () => {
         <div className="lg:block hidden my-20 relative">
           <div className='w-full border-[1px] border-primary'></div>
 
-          <div className="absolute -top-10 left-1/4 border-[1px] border-primary rounded-full  h-10"></div>
+          <div className="absolute -top-10 left-1/4 border-[1px] border-primary rounded-full  h-20"></div>
           <div className="absolute -top-10 right-1/4 border-[1px] border-primary rounded-full  h-20"></div>
         </div>
 
         <div className="grid grid-cols-12 lg:gap-6 gap-3 lg:my-8 my-0">
 
-          <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+          <div data-aos="fade-down" data-aos-delay="150" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
                 src={quality}
@@ -71,7 +71,7 @@ const DesignQuality = () => {
 
           </div>
 
-          <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+          <div data-aos="fade-up" data-aos-delay="150" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
                 src={team}

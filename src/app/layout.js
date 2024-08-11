@@ -4,6 +4,8 @@ import Navbar from "@/Components/Navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "@/Components/Footer";
+import 'aos/dist/aos.css';
+import AOSInit from "@/config/Aos";
 
 const inter = Poppins({ subsets: ["latin"], weight: ["400" ,"500","700","900"] });
 
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
       <Navbar/>
         {children}
         <Footer/>
+        <AOSInit/>
         </body>
     </html>
   );

@@ -12,22 +12,22 @@ const ContactForm = () => {
                 <form onSubmit={(e) => e.preventDefault()}>
 
                     <div className="text-white grid grid-cols-12 lg:gap-6 gap-3 mt-10">
-                        <div className="sm:col-span-6 col-span-12">
+                        <div className="sm:col-span-6 col-span-12 flex flex-col gap-0.5">
                             <label htmlFor="f-name" className="my-2">First Name</label>
                             <input required type="text" name="f-name" id="f-name" className="w-full bg-white text-gray-500 p-3 rounded-lg text-lg outline-none border-none" />
                         </div>
 
-                        <div className="sm:col-span-6 col-span-12">
+                        <div className="sm:col-span-6 col-span-12 flex flex-col gap-0.5">
                             <label htmlFor="l-name" className="my-2">Last Name</label>
                             <input required type="text" name="l-name" id="l-name" className="w-full bg-white text-gray-500 p-3 rounded-lg text-lg outline-none border-none" />
                         </div>
 
-                        <div className="col-span-12">
+                        <div className="col-span-12 flex flex-col gap-0.5">
                             <label htmlFor="phone" className="my-2">Phone</label>
                             <input required type="number" name="phone" id="phone" className="w-full bg-white text-gray-500 p-3 rounded-lg text-lg outline-none border-none" />
                         </div>
 
-                        <div className="col-span-12">
+                        <div className="col-span-12 flex flex-col gap-0.5">
                             <label htmlFor="msg" className="my-2">Inquiry</label>
                             <textarea name="msg" id="msg" className="w-full bg-white text-gray-500 p-3 rounded-lg text-lg outline-none border-none" rows="5"></textarea>
                         </div>

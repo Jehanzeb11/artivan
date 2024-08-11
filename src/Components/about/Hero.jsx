@@ -25,11 +25,11 @@ const Hero = () => {
 </div>
 
 <div className="lg:col-span-6 col-span-12 flex gap-3 items-end">
-<Image src={about1} alt="hero" width={1000} height={1000} className="w-1/2 object-contain"/>
-<Image src={about2} alt="hero" width={1000} height={1000} className="w-1/2 object-contain"/>
+<Image data-aos-delay="0" data-aos="fade-up" src={about1} alt="hero" width={1000} height={1000} className="w-1/2 object-contain"/>
+<Image data-aos-delay="0" data-aos="fade-down" src={about2} alt="hero" width={1000} height={1000} className="w-1/2 object-contain"/>
 </div>
 
-<div className="lg:col-span-6 col-span-12 hidden lg:flex flex-col justify-between gap-4">
+<div className="lg:col-span-6 col-span-12 hidden lg:flex flex-col justify-between gap-4" data-aos-delay="0" data-aos="fade-right">
 
 <h4 className='lg:text-3xl text-xl font-bold text-primary'>About Us</h4>
 <h1 className='xl:text-5xl text-3xl font-bold my-0 xl:leading-[60px] leading-8'>Masters Of <span className='text-primary'>Digital</span> And Design</h1>
@@ -41,10 +41,10 @@ const Hero = () => {
 </div>
 
 <div className="col-span-6">
-<Image src={about3} alt="hero" width={1000} height={1000} className="w-full object-contain"/>
+<Image data-aos-delay="0" data-aos="fade-down" src={about3} alt="hero" width={1000} height={1000} className="w-full object-contain"/>
 </div>
 <div className="col-span-6">
-<Image src={about4} alt="hero" width={1000} height={1000} className="w-full object-contain"/>
+<Image data-aos-delay="0" data-aos="fade-up" src={about4} alt="hero" width={1000} height={1000} className="w-full object-contain"/>
 </div>
 
 </div>

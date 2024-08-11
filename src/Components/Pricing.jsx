@@ -33,7 +33,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="flex justify-center px-4 py-16 items-center">
+    <div className="flex justify-center px-4 py-16 items-center" data-aos-delay="100" data-aos="fade-up">
       <div className="container xl:w-[90%] w-full">
         <h1 className="lg:text-6xl font-bold text-gray-900 sm:text-4xl text-3xl text-center">
           Discover Our <span className="text-primary">Competitive</span> Rates

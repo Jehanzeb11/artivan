@@ -20,7 +20,7 @@ const MagicHappens = () => {
           approach that maximizes your brand’s revenue.
         </p>
         <div className="grid grid-cols-12 gap-3 mt-16">
-          <div className="lg:col-span-4 md:col-span-6 col-span-12 rounded-md  shadow-md border-[1px] border-gray-300 p-4">
+          <div data-aos="fade-up" data-aos-delay="50" className="lg:col-span-4 md:col-span-6 col-span-12 rounded-md  shadow-md border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
                 src={magic1}
@@ -36,7 +36,7 @@ const MagicHappens = () => {
 
           </div>
 
-          <div className="lg:col-span-4 md:col-span-6 col-span-12 rounded-md  shadow-md border-[1px] border-gray-300 p-4">
+          <div data-aos="fade-up" data-aos-delay="150" className="lg:col-span-4 md:col-span-6 col-span-12 rounded-md  shadow-md border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
                 src={magic2}
@@ -52,7 +52,7 @@ const MagicHappens = () => {
 
           </div>
 
-          <div className="lg:col-span-4 md:col-span-6 col-span-12 rounded-md  shadow-md border-[1px] border-gray-300 p-4">
+          <div data-aos="fade-up" data-aos-delay="250" className="lg:col-span-4 md:col-span-6 col-span-12 rounded-md  shadow-md border-[1px] border-gray-300 p-4">
             <div className="w-fit p-2 rounded-lg bg-my-gradient">
               <Image
                 src={magic3}

@@ -9,7 +9,8 @@ const Experience = () => {
 <p className="md:py-6 py-4 text-center">We work to achieve design excellence for our clients so that they can shine brightly in the digital universe.</p>
 <div className="flex justify-center items-center xl:w-[80%]">
 <div className="grid grid-cols-12 xl:gap-10 lg:gap-6 gap-3 px-1 ">
-<div className="md:col-span-6 col-span-12 lg:py-6 py-4 lg:px-12 px-8 bg-[#F4F4F4] rounded-xl text-center">
+
+<div data-aos-delay="50" data-aos="fade-down" className="md:col-span-6 col-span-12 lg:py-6 py-4 lg:px-12 px-8 bg-[#F4F4F4] rounded-xl text-center">
 
     <h1 className="lg:text-2xl text-xl  font-semibold">Our Vision</h1>
 
@@ -18,7 +19,7 @@ const Experience = () => {
 
 </div>
 
-<div className="md:col-span-6 col-span-12 lg:py-6 py-4 lg:px-12 px-8 bg-my-gradient rounded-xl text-center text-white">
+<div data-aos-delay="250" data-aos="fade-up" className="md:col-span-6 col-span-12 lg:py-6 py-4 lg:px-12 px-8 bg-my-gradient rounded-xl text-center text-white">
 
     <h1 className="lg:text-2xl text-xl  font-semibold">Our Mission</h1>
 
@@ -26,6 +27,7 @@ const Experience = () => {
     <p className="xl:mt-6 lg:mt-4 mt-2 xl:text-base lg:text-sm text-xs">At Artevian we stand for a promise to democratize the digital revolution. Despite the size of a brand, we strive to provide equal access and empower all digital entities to thrive in the dynamic digital arena. We are enthusiastic about offering important assistance to individuals who possess the will and ability to excel in the constantly expanding digital industry.</p>
 
 </div>
+
 </div>
 </div>
 

@@ -34,7 +34,7 @@ const Pricing = () => {
 
   return (
     <div className="flex justify-center px-4 lg:py-16 py-8 items-center">
-      <div className="container xl:w-[90%] w-full">
+      <div className="container xl:w-[90%] w-full" data-aos-delay="100" data-aos="fade-up">
         <h1 className="lg:text-6xl font-bold text-gray-900 sm:text-4xl text-3xl text-center">
           Discover Our Tailored <span className="text-primary">Packages</span> 
         </h1>

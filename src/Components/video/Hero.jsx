@@ -6,13 +6,13 @@ const Hero = () => {
         <div className='w-full flex justify-center items-center lg:py-10 py-5 px-4 max-h-screen'>
             <div className="container lg:w-[90%]">
                 <div className="grid grid-cols-12 lg:gap-4 gap-3">
-                    <div className="md:col-span-6 col-span-12">
+                    <div className="md:col-span-6 col-span-12" data-aos-delay="100" data-aos="fade-right">
                         <h4 className='lg:text-6xl sm:text-4xl text-3xl font-bold text-gray-800 lg:mb-8 mb-3'><span className='text-primary'>Hand-Crafted</span> Animated Videos</h4>
                         <p className='text-gray-500 lg:my-4 my-2'>Artevian's top video animation services unleash incredible stories. As a prominent digital agency, we offer specialized skills in creating captivating and dynamic logo animations that are customized to meet the specific requirements of your business. If you need 2D animation, 3D animation, explainer videos, or motion graphics services, our skill and knowledge will consistently transform your ideas into visually captivating and innovative creations.</p>
                         <button className='btn lg:mt-8 mt-4'>Contact Us</button>
                     </div>
 
-                    <div className="md:col-span-6 col-span-12 flex justify-end">
+                    <div className="md:col-span-6 col-span-12 flex justify-end" data-aos-delay="100" data-aos="fade-left">
                         <div className='w-full h-full xl:w-[70%] lg:w-[90%] '>
                             <Image src={hero} alt="hero" width={1000} height={1000} className='w-full object-contain' />
                         </div>

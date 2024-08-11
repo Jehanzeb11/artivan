@@ -17,7 +17,7 @@ const QualityDesign = () => {
 
       <div className="grid grid-cols-12 lg:gap-6 gap-3 lg:my-8 my-3">
 
-        <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+        <div data-aos-delay="50" data-aos="fade-up" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
           <div className="w-fit p-2 rounded-lg bg-my-gradient">
             <Image
               src={exp}
@@ -33,7 +33,7 @@ const QualityDesign = () => {
 
         </div>
 
-        <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+        <div data-aos-delay="50" data-aos="fade-down" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
           <div className="w-fit p-2 rounded-lg bg-my-gradient">
             <Image
               src={service}
@@ -60,7 +60,7 @@ const QualityDesign = () => {
 
       <div className="grid grid-cols-12 lg:gap-6 gap-3 lg:my-8 my-0">
 
-        <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+        <div data-aos-delay="50" data-aos="fade-down" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
           <div className="w-fit p-2 rounded-lg bg-my-gradient">
             <Image
               src={quality}
@@ -76,7 +76,7 @@ const QualityDesign = () => {
 
         </div>
 
-        <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+        <div data-aos-delay="50" data-aos="fade-up" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
           <div className="w-fit p-2 rounded-lg bg-my-gradient">
             <Image
               src={affordability}
@@ -103,7 +103,7 @@ const QualityDesign = () => {
 
       <div className="grid grid-cols-12 lg:gap-6 gap-3 lg:my-8 my-0">
 
-        <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+        <div data-aos-delay="50" data-aos="fade-up" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
           <div className="w-fit p-2 rounded-lg bg-my-gradient">
             <Image
               src={quickTime}
@@ -119,7 +119,7 @@ const QualityDesign = () => {
 
         </div>
 
-        <div className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
+        <div data-aos-delay="50" data-aos="fade-down" className="md:col-span-6 col-span-12 rounded-md bg-white border-[1px] border-gray-300 p-4">
           <div className="w-fit p-2 rounded-lg bg-my-gradient">
             <Image
               src={latestTech}

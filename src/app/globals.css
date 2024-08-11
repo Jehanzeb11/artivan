@@ -13,7 +13,7 @@ body {
   color: white;
   border-radius: 12px;
   height: fit-content;
-  transition: all 0.2s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
 }
 
 .btn:hover {
@@ -162,3 +162,21 @@ li.slick-active button:before {
   display: flex !important;
   justify-content: center !important;
 }
+
+/* animations  */
+
+
+.fadeIn-animation{
+animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

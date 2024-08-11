@@ -58,9 +58,9 @@ const Navbar = () => {
               Services <IoIosArrowDown />
 
               {showMenu && (
-                <div className="absolute top-7 z-[999999] flex items-center justify-center">
+                <div className="absolute top-7 z-[999999] flex items-center justify-center text-lg">
                   <ul className="bg-white w-52 rounded-lg shadow-lg p-6 flex flex-col gap-3">
-                    <Link href="/logo-design" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                    <Link href="/logo-design" className="w-fit text-gray-700 flex gap-1 pb-1 items-end border-b-2 border-transparent hover:text-primary hover:border-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       Logo Design
                     </Link>
                     {/* <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
@@ -69,10 +69,10 @@ const Navbar = () => {
                     <li className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       B2B Portal
                     </li> */}
-                    <Link href="/website" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                    <Link href="/website" className="w-fit text-gray-700 flex gap-1 pb-1 items-end border-b-2 border-transparent hover:text-primary hover:border-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       Website Design
                     </Link>
-                    <Link href="/video-animation" className="text-gray-700 flex gap-1 items-end hover:text-primary transition-colors duration-200 ease-in-out cursor-pointer">
+                    <Link href="/video-animation" className="w-fit text-gray-700 flex gap-1 pb-1 items-end border-b-2 border-transparent hover:text-primary hover:border-primary transition-colors duration-200 ease-in-out cursor-pointer">
                       Video Animation
                     </Link>
                   </ul>
@@ -141,7 +141,7 @@ const Navbar = () => {
 
                 {showMenuMobile &&
 
-                  <ul className="flex flex-col gap-4 text-xl font-semibold bg-white mx-2 rounded-lg text-gray-800 p-2.5">
+                  <ul className="flex flex-col gap-4 text-xl font-[600] bg-gray-800 mx-2 rounded-lg text-gray-200 p-3 m-0">
 
                     <li
                       onClick={() => handleClose("logo-design")}
