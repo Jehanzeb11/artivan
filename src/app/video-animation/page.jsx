@@ -8,14 +8,14 @@ import React from 'react'
 
 const VideoAnimation = () => {
   return (
-    <>
+    <div className=' overflow-hidden'>
         <Banner/>
         <Hero />
         <BusinessCounter />
         <Portfolio />
         <Pricing />
         <Testimonials />
-    </>
+    </div>
   )
 }
 

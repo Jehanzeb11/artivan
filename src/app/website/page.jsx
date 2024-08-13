@@ -8,14 +8,14 @@ import React from 'react'
 
 const Website = () => {
   return (
-    <>
+    <div className=' overflow-hidden'>
         <Banner/>
         <Hero/>
         <BusinessCounter/>
         <Portfolio />
         <Pricing/>
         <Testimonials/>
-    </>
+    </div>
   )
 }
 

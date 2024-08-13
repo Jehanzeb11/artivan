@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import heroImage from "../assets/homeHero.png";
 import { GoArrowUpRight } from "react-icons/go";
+import QuoteModal from "./QuoteModal";
 
 const HomeHeroSection = () => {
+  const [showModal, setShowModal] = React.useState(false);
+
   return (
-    <div className="w-full bgHero sm:h-screen max-h-screen">
+    <div className="w-full bgHero sm:h-screen ">
       <div className="bg-white/80 h-full flex justify-center items-end w-full px-4 max-lg:pb-6">
         <div className="container lg:w-[90%] text-gray-900 w-full flex lg:px-4 lg:gap-4 gap-0 max-md:flex-col-reverse sm:justify-between items-center mt-12">
           <div data-aos="fade-up" data-aos-delay="50">
@@ -16,13 +20,13 @@ const HomeHeroSection = () => {
               Digital Experience
             </h1>
 
-            <p className="my-4 text-lg text-gray-700">
+            <p className="sm:my-4 my-2 text-lg text-gray-700">
               Custom Websites, Branding & Digital Marketing Solutions
             </p>
 
             <div className="flex gap-6 items-center">
-              <button className="btn">Get A Quote</button>
-              <button className="border-b-[2px] transition-all duration-200 ease-in-out border-transparent hover:border-gray-800 flex gap-1 items-center font-medium">
+              <button className="btn" onClick={() => setShowModal(true)}>Get A Quote</button>
+              <button className=" border-b-[2px] transition-all duration-200 ease-in-out border-transparent hover:border-gray-800 flex gap-1 items-center font-medium">
                 Contact Us <GoArrowUpRight />
               </button>
             </div>
@@ -39,6 +43,7 @@ const HomeHeroSection = () => {
           </div>
         </div>
       </div>
+      <QuoteModal showModal={showModal} setShowModal={setShowModal} />
     </div>
   );
 };

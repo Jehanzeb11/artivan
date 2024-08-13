@@ -3,7 +3,7 @@ import Image from 'next/image'
 import hero from '@/assets/website-hero.png'
 const Hero = () => {
   return (
-    <div className='w-full flex justify-center items-center lg:py-10 py-5 px-4 max-h-screen'>
+    <div className='w-full flex justify-center items-center lg:py-10 py-5 px-4 max-h-screen max-sm:my-10'>
         <div className="container lg:w-[90%]">
             <div className="grid grid-cols-12 lg:gap-4 gap-3">
                 <div className="md:col-span-6 col-span-12" data-aos-delay="100" data-aos="fade-right">
@@ -12,8 +12,8 @@ const Hero = () => {
                     <button className='btn lg:mt-8 mt-4'>Contact Us</button>
                 </div>
 
-                <div className="md:col-span-6 col-span-12 flex justify-end" data-aos-delay="100" data-aos="fade-left">
-                    <Image src={hero} alt="hero" width={1000} height={1000} className='xl:w-[70%] lg:w-[90%] w-full object-contain'/>
+                <div className="md:col-span-6 col-span-12 flex justify-end max-sm:justify-center" data-aos-delay="100" data-aos="fade-left">
+                    <Image src={hero} alt="hero" width={1000} height={1000} className='xl:w-[70%] lg:w-[90%] max-sm:w-[60%] object-contain'/>
                 </div>
             </div>
         </div>
