@@ -4,6 +4,7 @@ import CollectionData from "./CollectionDataLogo";
 import CollectionDataB2B from "./CollectionDataB2B";
 import CollectionDataWebsite from "./CollectionDataWebsite";
 import CollectionDataVideo from "./CollectionDataVideo";
+import CollectionDataArt from "./CollectionDataArt";
 
 const Collection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -62,7 +63,7 @@ const Collection = () => {
   ))}
 </div>
 
-{activeTab === 0 ? <CollectionData /> : activeTab === 2 ? <CollectionDataB2B/> :  activeTab === 3 ?  <CollectionDataWebsite />: activeTab === 4 ? <CollectionDataVideo /> : null}
+{activeTab === 0 ? <CollectionData /> : activeTab === 1 ? <CollectionDataArt/> : activeTab === 2 ? <CollectionDataB2B/> :  activeTab === 3 ?  <CollectionDataWebsite />: activeTab === 4 ? <CollectionDataVideo /> : null}
 
 
       </div>

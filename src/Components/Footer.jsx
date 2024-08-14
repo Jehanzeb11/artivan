@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/black-logo.png";
 import Image from 'next/image';
 
 const Footer = () => {
