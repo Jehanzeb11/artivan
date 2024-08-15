@@ -8,7 +8,7 @@ import charli from"../assets/Charli.png";
 import hell from"../assets/hell.jpg";
 import denver from"../assets/denver.jpg";
 import anim from"../assets/anim.jpg";
-import correction from"../assets/correction.jpg";
+import correction from"../assets/Correction.jpg";
 import gwen from"../assets/spider-gwen.jpg";
 import mouse1 from"../assets/mouse1.jpg";
 import mouse2 from"../assets/mouse2.jpg";
