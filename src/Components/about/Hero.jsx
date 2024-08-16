@@ -4,6 +4,7 @@ import about1 from "@/assets/about-1.png"
 import about2 from "@/assets/about-2.png"
 import about3 from "@/assets/about-3.png"
 import about4 from "@/assets/about-4.png"
+import Link from 'next/link'
 const Hero = () => {
   return (
     <div className='w-full flex justify-center items-center py-16 mt-8 px-4'>
@@ -20,7 +21,7 @@ const Hero = () => {
 <p className='font-semibold max-xl:text-sm'>Infusing Creativity into Your Digital Presences.</p>
 <p className='xl:mt-4 mt-2 text-gray-500 max-xl:text-sm'>Artevian works as your digital agent with a core ofvaluing client satisfaction. Our expertise lies in various market niches, involving digital marketing, content creation, logo design, branding, and web development.</p>
 
-<button className='btn w-fit'>Contact Us</button>
+<Link href="/contact"><button className='btn w-fit'>Contact Us</button></Link>
 
 </div>
 
@@ -36,7 +37,7 @@ const Hero = () => {
 <p className='font-semibold max-xl:text-sm'>Infusing Creativity into Your Digital Presences.</p>
 <p className='xl:mt-4 mt-2 text-gray-500 max-xl:text-sm xl:leading-10 lg:leading-8'>Artevian works as your digital agent with a core ofvaluing client satisfaction. Our expertise lies in various market niches, involving digital marketing, content creation, logo design, branding, and web development.</p>
 
-<button className='btn w-fit'>Contact Us</button>
+<Link href="/contact"><button className='btn w-fit'>Contact Us</button></Link>
 
 </div>
 

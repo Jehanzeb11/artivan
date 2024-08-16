@@ -6,6 +6,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import logo from "@/assets/black-logo.png";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -34,7 +35,7 @@ const Footer = () => {
                             <li className="border-b-2 border-transparent transition-colors duration-300 ease-in cursor-pointer hover:border-primary w-fit">About</li>
                             <li className="border-b-2 border-transparent transition-colors duration-300 ease-in cursor-pointer hover:border-primary w-fit">Service</li>
                             <li className="border-b-2 border-transparent transition-colors duration-300 ease-in cursor-pointer hover:border-primary w-fit">Portofolio</li>
-                            <li className="border-b-2 border-transparent transition-colors duration-300 ease-in cursor-pointer hover:border-primary w-fit">Contact Us</li>
+                            <Link href="/contact"><li className="border-b-2 border-transparent transition-colors duration-300 ease-in cursor-pointer hover:border-primary w-fit">Contact Us</li></Link>
                         </ul>
 
                     </div>

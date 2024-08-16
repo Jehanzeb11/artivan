@@ -4,6 +4,7 @@ import Image from "next/image";
 import heroImage from "../assets/homeHero.png";
 import { GoArrowUpRight } from "react-icons/go";
 import QuoteModal from "./QuoteModal";
+import Link from "next/link";
 
 const HomeHeroSection = () => {
   const [showModal, setShowModal] = React.useState(false);
@@ -26,9 +27,9 @@ const HomeHeroSection = () => {
 
             <div className="flex gap-6 items-center">
               <button className="btn" onClick={() => setShowModal(true)}>Get A Quote</button>
-              <button className=" border-b-[2px] transition-all duration-200 ease-in-out border-transparent hover:border-gray-800 flex gap-1 items-center font-medium">
+             <Link href="/contact"><button className=" border-b-[2px] transition-all duration-200 ease-in-out border-transparent hover:border-gray-800 flex gap-1 items-center font-medium">
                 Contact Us <GoArrowUpRight />
-              </button>
+              </button></Link>
             </div>
           </div>
 

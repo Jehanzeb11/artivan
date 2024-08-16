@@ -93,7 +93,7 @@ console.log(endpoint)
             </Link>
           </ul>
 
-          <button className="btn lg:block hidden">Hire Us Now</button>
+          <Link href="/contact"><button className="btn lg:block hidden">Hire Us Now</button></Link>
 
           <button className="lg:hidden block" onClick={() => setShow(true)}>
             <RiMenu3Fill color="#059CC5" size={28} />

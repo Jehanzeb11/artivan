@@ -3,6 +3,7 @@ import person1 from "../assets/person1.png"
 import person2 from "../assets/person2.png"
 import person3 from "../assets/person3.png"
 import Image from "next/image";
+import Link from "next/link";
 const BusinessRock = () => {
   return (
     <div className="flex justify-center items-center px-4">
@@ -15,7 +16,7 @@ const BusinessRock = () => {
 <p className="xl:px-64 lg:px-36 px-0 text-center text-gray-700 sm:my-10 my-2 max-sm:text-sm">We are a team of enthusiastic, committed, and competent professionals and marketing professionals that are working hard to expand your user base.</p>
 
 <div className="flex justify-center mt-6 mb-7">
-<button className="btn">Contact Now</button>
+<Link href="/contact"><button className="btn">Contact Now</button></Link>
 </div>
         </div>
       </div>
